@@ -3,6 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - nvm install 18
         - nvm use 18
         - corepack enable
         - corepack prepare pnpm@9.0.0 --activate
